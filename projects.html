@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <iframe src="navigation.html" width="100%" height="70" frameborder="0"></iframe>
+    </header>
+
+    <main role="main" class="container-fluid">
+        <h4>
+            Projects
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#projectModal">
+                Add a new Project
+            </button>
+        </h4>
+
+        <article>
+            <h4>
+                Internet Banking application
+                <button type="button" class="deleteButton btn btn-danger">X</button>
+            </h4>
+
+            <div>
+                <p>
+                This application is used to create and manage various kinds on money transactions online. It deals with creation of different kinds of payments, signing/approving payments and maintaining payments. It supports single payments, recurring payments and also batch payments.
+                </p>
+                <table class="table w-50">
+                    <tr>
+                        <th width="10%">Role</th>
+                        <td width="40%">Senior developer</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Duration</th>
+                        <td width="40%">Feb-2014 to Present</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Technology</th>
+                        <td width="40%">Java, J2EE, Websphere application server, Web services, Spring</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Tools</th>
+                        <td width="40%">IntelliJ, GIT, Maven, SOAP UI, Putty, Sonar, Selenium and Jenkins</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Location</th>
+                        <td width="40%">Netherlands and India</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </article>
+
+        <article>
+            <h4>
+                Airline booking application
+                <button type="button" class="deleteButton btn btn-danger">X</button>
+            </h4>
+            <div>
+                <p>
+                    This application is used to create and manage airline bookings online. It deals with creation of airline booking online and also managing the booking.
+                </p>
+                <table class="table w-50">
+                    <tr>
+                        <th width="10%">Role</th>
+                        <td width="40%">Developer</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Duration</th>
+                        <td width="40%">Aug-2011 to Oct-2013</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Technology</th>
+                        <td width="40%">Java, J2EE, Weblogic application server, Web services, Spring</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Tools</th>
+                        <td width="40%">Eclipse, SVN, Ant, SOAP UI, Putty, Sonar</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Location</th>
+                        <td width="40%">UK and India</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </article>
+
+        <article>
+            <h4>
+                Document management application
+                <button type="button" class="deleteButton btn btn-danger">X</button>
+            </h4>
+            <div>
+                <p>
+                    An application which will be used to maintain all the documents in a central location online. These documents can be shared with the desired people by providing permissions to them. The application also allows users to create different kinds of documents online.
+                </p>
+                <table class="table w-50">
+                    <tr>
+                        <th width="10%">Role</th>
+                        <td width="40%">Developer</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Duration</th>
+                        <td width="40%">Mar-2007 to Jul-2011</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Technology</th>
+                        <td width="40%">Java, J2EE, JBoss application server, Web services, Struts, Sprint</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Tools</th>
+                        <td width="40%">Eclipse, SVN, Ant, SOAP UI, Putty</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">Location</th>
+                        <td width="40%">US and India</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </article>
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Add Project</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form id="projectForm">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="title"><b>Title</b></label>
+                                    <input type="text" class="form-control" id="title" placeholder="Title" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="description"><b>Description</b></label>
+                                    <textarea class="form-control" id="description" name="description" maxlength="250" rows="3" placeholder="Description" required></textarea>
+                                </div>
+                            </div><div class="row">
+                                <div class="col-sm-12">
+                                    <label for="role"><b>Role</b></label>
+                                    <input type="text" class="form-control" id="role" placeholder="Role" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="dateFrom"><b>Duration from</b></label>
+                                    <input type="date" class="form-control" id="dateFrom" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="dateTo"><b>Duration to</b></label>
+                                    <input type="date" class="form-control" id="dateTo" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="technology"><b>Technology</b></label>
+                                    <input type="text" class="form-control" id="technology" placeholder="Technology" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="tools"><b>Tools</b></label>
+                                    <input type="text" class="form-control" id="tools" placeholder="Tools" required>
+                                </div>
+                            </div><div class="row">
+                                <div class="col-sm-12">
+                                    <label for="location"><b>Location</b></label>
+                                    <input type="text" class="form-control" id="location" placeholder="Location" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="closeButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="addProject">Add</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
